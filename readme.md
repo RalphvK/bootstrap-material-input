@@ -1,13 +1,29 @@
 # Material-style inputs for Bootstrap 4
 
+View Codepen: [ralphvk/pen/LXpomR](https://codepen.io/ralphvk/pen/LXpomR)
+
 ## Add material-style inputs to your project.
 
-First, ensure you have included both Bootstrap and Jquery before you include this code.
+#### Include Bootstrap and jQuery
+First, ensure you have included both Bootstrap and jQuery before you include this code.
 
+#### (S)CSS
 Include either the SCSS (recommended) or CSS file in your project to style the ```.form-group.input-material``` class.
 
+If you would just like to include the compiled css for development purposes, use:
+```html
+<link rel="stylesheet" href="css/input-material.css">
+```
+
+#### Javascript
 Include ```materializeInputs()``` jQuery method by including ```materialize-inputs.jquery.js```, preferably combining it with other javascript files or embedding it in the HTML document.
 
+If you would just like to include the file for development purposes, you can use:
+```html
+<script src="js/materialize-inputs.jquery.js"></script>
+```
+
+#### Usage
 Make any Bootstrap form group with text inputs or a textarea material-style by adding the ```input-material``` class to the form-group element. Then add a ```<label>``` after the input. For example:
 
 ```html

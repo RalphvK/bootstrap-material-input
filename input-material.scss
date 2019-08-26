@@ -32,6 +32,14 @@
         background: transparent;
         padding-left: 5px;
         box-shadow: none;
+
+        /* required fields */
+        &:required ~ label::after {
+            content: '*';
+            color: $danger;
+            padding-left: 2px;
+            font-size: 0.8em;
+        }
     
         /* active state */
         &:focus,

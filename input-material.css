@@ -20,8 +20,14 @@
     background: transparent;
     padding-left: 5px;
     box-shadow: none;
+    /* required fields */
     /* active state */
     /* invalid state */ }
+    .form-group.input-material .form-control:required ~ label::after {
+      content: '*';
+      color: #dc3545;
+      padding-left: 2px;
+      font-size: 0.8em; }
     .form-group.input-material .form-control:focus, .form-group.input-material .form-control[value]:not([value=""]) {
       border-bottom-color: #007bff;
       color: #000; }

@@ -1,7 +1,7 @@
 $.fn.materializeInputs = function(selectors) {
 
     // default param with backwards compatibility
-    if (typeof(selectors)==='undefined') selectors = "input, textarea";
+    if (typeof(selectors)==='undefined') selectors = "input, textarea, select";
 
     // attribute function
     function setInputValueAttr(element) {
@@ -13,8 +13,8 @@ $.fn.materializeInputs = function(selectors) {
         setInputValueAttr(this);
     });
 
-    // on keyup
-    this.on("keyup", selectors, function() {
+    // on keyup and change
+    this.on("keyup change", selectors, function() {
         setInputValueAttr(this);
     });
 };

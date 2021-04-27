@@ -25,7 +25,7 @@
         -webkit-transition: 0.1s ease all;
     }
   
-    .form-control {
+    .form-control, .form-select {
         border: none;
         border-bottom: 2px solid $inactive-color;
         border-radius: 0px;

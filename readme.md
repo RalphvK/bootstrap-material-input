@@ -52,3 +52,15 @@ The method uses a delegated event handler to be more reliable in a changing DOM.
 ```
 
 By default the selector parameter is set to: ```"input, textarea"```.
+
+# Compiling SCSS
+
+First install the dependencies using:
+```
+npm install
+```
+
+Then run the Gulp script to start the ```watch``` task. This task will watch all ```.scss``` files in the root and compile them to ```.css``` files:
+```
+npm run gulp
+```

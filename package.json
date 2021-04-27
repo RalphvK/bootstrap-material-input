@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-material-input",
+  "version": "1.0.0",
+  "description": "Simple Material style inputs for Bootstrap",
+  "main": "example.html",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RalphvK/boostrap-material-input.git"
+  },
+  "author": "Ralph van Kruiselbergen",
+  "bugs": {
+    "url": "https://github.com/RalphvK/boostrap-material-input/issues"
+  },
+  "homepage": "https://github.com/RalphvK/boostrap-material-input#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-minify": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "*",
+    "merge-stream": "*"
+  }
+}

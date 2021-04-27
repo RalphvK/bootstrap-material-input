@@ -29,7 +29,7 @@
         border: none;
         border-bottom: 2px solid $inactive-color;
         border-radius: 0px;
-        background: transparent;
+        background-color: transparent;
         padding-left: 5px;
         box-shadow: none;
 
@@ -70,6 +70,10 @@
         &[value]:not([value=""]).parsley-error ~ label {
             color: $danger;
         }
+    }
+
+    .form-select {
+        background-position: right 0 center;
     }
   
     .parsley-errors-list {

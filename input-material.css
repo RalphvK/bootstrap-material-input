@@ -49,7 +49,8 @@
     .form-group.input-material .form-select[value]:not([value=""]).parsley-error ~ label {
       color: #dc3545; }
   .form-group.input-material .form-select {
-    background-position: right 0 center; }
+    background-position: right 0 center;
+    padding-left: 0; }
   .form-group.input-material .parsley-errors-list {
     color: #dc3545;
     list-style: none;

@@ -19,10 +19,18 @@
         position: absolute;
         pointer-events: none;
         left: 5px;
-        top: 7px;
+        bottom: 1px;
         transition: 0.1s ease all;
         -moz-transition: 0.1s ease all;
         -webkit-transition: 0.1s ease all;
+    }
+
+    /* textarea label */
+    textarea.form-control {
+        &~ label {
+            bottom: 90%; // fallback for browsers that do not support calc()
+            bottom: calc(100% - 38px);
+        }
     }
   
     .form-control, .form-select {
@@ -52,7 +60,7 @@
         &[value]:not([value=""]) ~ label {
             top: unset;
             bottom: 100%; // fallback for browsers without calc() support
-            bottom: calc(100% - 17px);
+            bottom: calc(100% - 16px);
             font-size: 14px;
             color: $primary;
             font-weight: 500;

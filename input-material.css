@@ -1,7 +1,8 @@
 .form-group.input-material {
   position: relative;
   margin-top: 50px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  /* textarea label */ }
   .form-group.input-material label {
     color: #b1bbc4;
     font-size: 16px;
@@ -9,10 +10,13 @@
     position: absolute;
     pointer-events: none;
     left: 5px;
-    top: 7px;
+    bottom: 1px;
     transition: 0.1s ease all;
     -moz-transition: 0.1s ease all;
     -webkit-transition: 0.1s ease all; }
+  .form-group.input-material textarea.form-control ~ label {
+    bottom: 90%;
+    bottom: calc(100% - 38px); }
   .form-group.input-material .form-control, .form-group.input-material .form-select {
     border: none;
     border-bottom: 2px solid #ced4da;
@@ -36,7 +40,7 @@
     .form-group.input-material .form-select[value]:not([value=""]) ~ label {
       top: unset;
       bottom: 100%;
-      bottom: calc(100% - 17px);
+      bottom: calc(100% - 16px);
       font-size: 14px;
       color: #007bff;
       font-weight: 500; }

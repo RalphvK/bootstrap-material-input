@@ -50,7 +50,9 @@
     
         &:focus ~ label,
         &[value]:not([value=""]) ~ label {
-            top: -25px;
+            top: unset;
+            bottom: 100%; // fallback for browsers without calc() support
+            bottom: calc(100% - 17px);
             font-size: 14px;
             color: $primary;
             font-weight: 500;

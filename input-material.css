@@ -34,7 +34,9 @@
     .form-group.input-material .form-control:focus ~ label,
     .form-group.input-material .form-control[value]:not([value=""]) ~ label, .form-group.input-material .form-select:focus ~ label,
     .form-group.input-material .form-select[value]:not([value=""]) ~ label {
-      top: -25px;
+      top: unset;
+      bottom: 100%;
+      bottom: calc(100% - 17px);
       font-size: 14px;
       color: #007bff;
       font-weight: 500; }
